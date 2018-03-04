@@ -1,0 +1,16 @@
+#signout {
+	background-color: red;
+}
+
+.detail {
+	margin: 30px auto;
+	width: 300px;
+	border: 1px solid white;
+}
+
+.message {
+	text-align: center;
+	color: red;
+	margin: 0 auto;
+	width: 600px;
+}

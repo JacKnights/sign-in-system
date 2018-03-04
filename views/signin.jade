@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  link(rel='stylesheet', href='stylesheets/signin.css')
+
+  h1 用户登录
+
+  if message   
+    div.message!= message
+  
+  form(method="post" id="board") 
+    span 用户名：
+      input(type="text" name="username" id="username")
+      p(class="status")
+
+    span 密码：
+      input(type="password" name="password" id="password")
+      p(class="status")
+
+    div(id="btn-container")
+      input(type="button" id="signup" value="注册")
+      input(type="submit" id="signin" value="登录")
+        
+  script(type="text/javascript" src="javascripts/jquery.js")
+  script(type="text/javascript", src="javascripts/validator.js")
+  script(type="text/javascript" src="javascripts/signin.js")

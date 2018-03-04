@@ -1,0 +1,41 @@
+#board > span {
+	text-align: right;
+	color: white;
+	display: block;
+	width: 350px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+#board > span > input {
+	font-size: 15px;
+	height: 20px;
+}
+
+#board > span > p {
+	font-size: 15px;
+	width: 500px;
+	height: 20px;
+	display: block;
+}
+
+#reset {
+	background-color: red;
+}
+
+#signup {
+	background-color: green;
+	margin-left: 50px;
+}
+
+.status {
+	text-align: center;
+	height: 20px;
+}
+
+.message {
+	text-align: center;
+	color: red;
+	margin: 0 auto;
+	width: 600px;
+}

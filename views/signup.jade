@@ -1,0 +1,43 @@
+extends layout
+
+block content
+
+  link(rel='stylesheet', href='stylesheets/signup.css')
+
+  h1 用户注册
+
+  if message   
+    div.message!= message
+  
+  form(method="post" id="board") 
+    span 用户名：
+      input(type="text" name="username" id="username")
+      p(class="status")
+
+    span 学号：
+      input(type="text" name="studentID" id="studentID")
+      p(class="status")
+
+    span 电话：
+      input(type="text" name="phone" id="phone")
+      p(class="status")
+
+    span 邮箱：
+      input(type="text" name="email" id="email")
+      p(class="status")
+
+    span 密码：
+      input(type="password" name="password" id="password")
+      p(class="status")
+
+    span 确认密码：
+      input(type="password" name="confirmPassword" id="confirmPassword")
+      p(class="status")
+
+    div(id="btn-container")
+      input(type="reset" id="reset")
+      input(type="submit" id="signup" value="注册")
+        
+  script(type="text/javascript" src="javascripts/jquery.js")
+  script(type="text/javascript", src="javascripts/validator.js")
+  script(type="text/javascript" src="javascripts/signup.js")

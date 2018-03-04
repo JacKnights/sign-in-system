@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+	font-family: "微软雅黑";
+	margin: 30px auto;
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	height: 80px;
+	line-height: 200%;
+}
+
+#board {
+	width: 500px;
+	height: 500px;
+	border: 1px solid white;
+	border-radius: 5%;
+	margin: 0px auto;
+	color: white;
+}
+
+#btn-container {
+	text-align: center;
+}
+
+#btn-container > input {
+	cursor: pointer;
+	width: 60px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: black;
+}
